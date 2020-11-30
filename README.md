@@ -36,7 +36,7 @@
 
 ## 🧐 About <a name = "about"></a>
 **Description:**
-ETL stands for “extract, transform, and load” — the processes a data pipeline uses to reproduce data from a source system into a target system such as a cloud data warehouse.
+ETL stands for “extract, tranform, and load” — the processes a data pipeline uses to reproduce data from a source system into a target system such as a cloud data warehouse.
 Once we have identified our datasets, perform ETL on the data. Our plan and document followed:
 - The sources of data that we will extract from.
 - The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
@@ -59,18 +59,17 @@ We use aggrate techniques to sort the most number of games in a specific genre.
 
 **Loading** <br>
 During the loading step, the pipeline replicates data from the source into the target system, which might be a storage system - Postgress SQL.
-We initially built the schema of the database using c . We created three databses to store games, store and platform information. We use platform_id and store_id as the linking keys between the data tables.
-After setting the datatypes we loaded data from the pandas dataframe into sql using SQL ALchemy.
+We initially built the schema of the database using ERD Technique . We created three databses to load games, store and platform information. We use platform_id and store_id as the linking keys between the data tables.After setting the datatypes we loaded data from the pandas dataframe into sql using SQL ALchemy. We also checked the authenticity of the db by performing a join on these three tables.
 
 
 ## ✍️ Observable Trends <a name = "trends"></a>
 - PC games has majority in the video games collection
 - Most sought after genre is "Casual" followed by "Indie"
 - True Rating of the game depends on the Rating_Count
-- Other PC Playstation Exclusive games has taken the leads in the ratings
+- Playstation Exclusive games has taken the leads in the ratings
 
 ### Conclusion 
-This analysis illustrated  ETL procedure where the json data is retrived from the https://api.rawg.io/docs/. We used pandas organise the json data into dataframe. We used inline graphs to analyse the data. And postgress SQL to load data into databse for further analysis. RAWG databse has more 350,000 records we had to limit data retrieved and also considering ELT approach in the future.
+This analysis illustrated  ETL procedure - where the json data is retrived from the https://api.rawg.io/docs/ , we used pandas to insert the json data into pandas dataframe, we used inline graphs to analyse the data and postgress SQL to load info into database for further analysis. RAWG databse has more 350,000 records, so we had to limit the data retrieved and also would be considering ELT approach in the future.
 
 
 
