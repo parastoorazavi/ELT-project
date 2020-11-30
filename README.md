@@ -1,6 +1,6 @@
 # ETL Project
 
-ETL stands for “extract, load, and transform” — the processes a data pipeline uses to reproduce data from a source system into a target system such as a cloud data warehouse.
+ETL stands for “extract, transform, and load” — the processes a data pipeline uses to reproduce data from a source system into a target system such as a cloud data warehouse.
 Once we have identified our datasets, perform ETL on the data. Our plan and document followed:
 - The sources of data that we will extract from.
 - The type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc).
